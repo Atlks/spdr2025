@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug TS (ts-node-esm)",
+      "type": "node",
+      "request": "launch",
+
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["ts-node-esm"],
+
+   "args": ["${file}"],
+      "cwd": "${workspaceFolder}",
+
+      "skipFiles": ["<node_internals>/**"],
+
+      "env": {
+        "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.json"
+      }
+    }
+  ]
+}
